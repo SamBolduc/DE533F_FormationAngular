@@ -1,6 +1,6 @@
 <div class="alert alert-danger" [style.backgroundColor]="backgroundColor">
   <p>Hello from EXO1</p>
   <p>>Background color: {{backgroundColor}}</p>
-  <input #messageInput (change)="backgroundColorChange(messageInput.value)" type="text" placeholder="Veuillez entrer la couleur de background du div, puis appuyer sur 'Entrer'"/>
-  <input (change)="resetColor()" type="button" value="Reset"/>
+  <input #messageInput class="form-control" (change)="backgroundColorChange(messageInput.value)" type="text" placeholder="Veuillez entrer la couleur de background du div, puis appuyer sur 'Entrer'"/>
+  <input class="form-control" (click)="resetColor()" type="button" value="Reset"/>
 </div>
