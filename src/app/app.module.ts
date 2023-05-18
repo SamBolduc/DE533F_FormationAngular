@@ -13,6 +13,8 @@ import { ListComponent } from './cv/list/list.component';
 import { ItemComponent } from './cv/item/item.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { Exo4Component } from './components/exo4/exo4.component';
+import { Exo5Component } from './components/exo5/exo5.component';
+import { RainbowDirective } from './directives/exo5/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { Exo4Component } from './components/exo4/exo4.component';
     ListComponent,
     ItemComponent,
     DetailCvComponent,
-    Exo4Component
+    Exo4Component,
+    Exo5Component,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
