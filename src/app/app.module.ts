@@ -20,6 +20,7 @@ import { TodoComponent } from './todo/components/todo/todo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { EmbaucheComponent } from './cv/embauche/embauche/embauche.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { ToastrModule } from 'ngx-toastr';
     Exo5Component,
     RainbowDirective,
     EmptyDefaultPipe,
-    TodoComponent
+    TodoComponent,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,
