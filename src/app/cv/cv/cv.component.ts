@@ -26,6 +26,24 @@ export class CvComponent {
       'student',
       'rotating_card_profile2.png'
     ),
+    new Cv(
+      3,
+      'test',
+      'vide',
+      '43241',
+      551,
+      'tl',
+      ''
+    ),
+    new Cv(
+      4,
+      'test42141',
+      'whitespace',
+      '421',
+      125,
+      'joueur',
+      '   '
+    ),
   ];
 
   selectedCv: Cv | null = null;

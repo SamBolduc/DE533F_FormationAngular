@@ -15,6 +15,7 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { Exo4Component } from './components/exo4/exo4.component';
 import { Exo5Component } from './components/exo5/exo5.component';
 import { RainbowDirective } from './directives/exo5/rainbow.directive';
+import { EmptyDefaultPipe } from './pipes/empty-default.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RainbowDirective } from './directives/exo5/rainbow.directive';
     DetailCvComponent,
     Exo4Component,
     Exo5Component,
-    RainbowDirective
+    RainbowDirective,
+    EmptyDefaultPipe
   ],
   imports: [
     BrowserModule,
