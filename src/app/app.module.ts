@@ -16,7 +16,10 @@ import { Exo4Component } from './components/exo4/exo4.component';
 import { Exo5Component } from './components/exo5/exo5.component';
 import { RainbowDirective } from './directives/exo5/rainbow.directive';
 import { EmptyDefaultPipe } from './pipes/empty-default.pipe';
+import { TodoComponent } from './todo/components/todo/todo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +34,15 @@ import { EmptyDefaultPipe } from './pipes/empty-default.pipe';
     Exo4Component,
     Exo5Component,
     RainbowDirective,
-    EmptyDefaultPipe
+    EmptyDefaultPipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   exports: [],
   providers: [],

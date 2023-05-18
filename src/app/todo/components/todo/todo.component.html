@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" *ngFor="let todo of todos">
+        <div class="card-body">
+          <h5 class="card-title">{{todo.name}}</h5>
+          <div class="card-text">{{todo.content}}</div>
+          <i class="card-link fa fa-trash" aria-hidden="true" (click)="removeTodo(todo)"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-control" id="name" type="text" [(ngModel)]="name">
+      </div>
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <input class="form-control" id="content" type="text" [(ngModel)]="content">
+      </div>
+      <div class="form-group">
+        <input type="button" class="btn btn-primary" value="Add Todo" [disabled]="isFormCompleted()" (click)="addTodo()">
+      </div>
+    </div>
+  </div>
+</div>
