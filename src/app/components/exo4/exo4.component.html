@@ -1,0 +1,19 @@
+<div class="container">
+  <p [ngStyle]="myStyle">exo4 works!</p>
+
+  <div class="row">
+    <div class="col-sm">
+      <input #color class="form-control" type="color" (change)="colorChange(color.value)">
+    </div>
+    <div class="col-sm">
+      <input #size class="form-control" type="number" value="12" (change)="sizeChange(size.value)">
+    </div>
+    <div class="col-sm">
+      <select #select class="form-control" name="fonts" id="fonts" (change)="fontChange(select.value)">
+        <option value="arial">arial</option>
+        <option value="garamond">garamond</option>
+        <option value="verdana">verdana</option>
+      </select>
+    </div>
+  </div>
+</div>
