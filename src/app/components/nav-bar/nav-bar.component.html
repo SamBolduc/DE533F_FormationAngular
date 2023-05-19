@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLinkActive="active text-primary" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['']">Accueil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" [routerLink]="['']" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active text-primary">Home <span class="sr-only">First</span></a>
+      <a class="nav-item nav-link" [routerLink]="['exo1']" routerLinkActive="active text-primary">Exercice #2</a>
+      <a class="nav-item nav-link" [routerLink]="['exo2']" routerLinkActive="active text-primary">Exercice #1</a>
+      <a class="nav-item nav-link" [routerLink]="['cv']" routerLinkActive="active text-primary">CV</a>
+      <a class="nav-item nav-link" [routerLink]="['exo4']" routerLinkActive="active text-primary">Exercice #4</a>
+      <a class="nav-item nav-link" [routerLink]="['exo5']" routerLinkActive="active text-primary">Exercice #5</a>
+      <a class="nav-item nav-link" [routerLink]="['todo']" routerLinkActive="active text-primary">Todo</a>
+    </div>
+  </div>
+</nav>

@@ -21,4 +21,11 @@ export class EmbaucheService {
 
     return false;
   }
+
+  deleteCv(cv: Cv){
+    const index = this.embauches.indexOf(cv);
+    if(index !== -1){
+      this.embauches.splice(index, 1);
+    }
+  }
 }
