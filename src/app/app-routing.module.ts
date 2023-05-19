@@ -9,6 +9,7 @@ import { Exo4Component } from './components/exo4/exo4.component';
 import { Exo5Component } from './components/exo5/exo5.component';
 import { CvInfosComponent } from './cv/cv-infos/cv-infos.component';
 import { Nf404Component } from './components/nf404/nf404/nf404.component';
+import { LoginComponent } from './components/login/login/login.component';
 
 const routes: Routes = [
   {path: '', component: FirstComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'exo4', component: Exo4Component},
   {path: 'exo5', component: Exo5Component},
   {path: 'todo', component: TodoComponent},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: Nf404Component},
 ];
 

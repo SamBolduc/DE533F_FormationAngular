@@ -24,6 +24,7 @@ import { EmbaucheComponent } from './cv/embauche/embauche/embauche.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CvInfosComponent } from './cv/cv-infos/cv-infos.component';
 import { Nf404Component } from './components/nf404/nf404/nf404.component';
+import { LoginComponent } from './components/login/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { Nf404Component } from './components/nf404/nf404/nf404.component';
     EmbaucheComponent,
     NavBarComponent,
     CvInfosComponent,
-    Nf404Component
+    Nf404Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
